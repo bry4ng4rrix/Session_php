@@ -1,3 +1,20 @@
 body {
-    background: black;
+    background-color: rgb(22, 4, 34);
+}
+
+input{
+    height: 45px;
+    margin-top: 10px;
+    width: 350px;
+}
+.form{
+    margin-top: 10%;
+    padding: 5px;
+}
+
+.subm {
+    background:none;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 4px;
 }
