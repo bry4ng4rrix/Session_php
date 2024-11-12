@@ -48,7 +48,7 @@
         <input type="submit" value="Enregistrer" class="m-4 subm">
         </div>
         
-        <p class=" btn mt-3 btn-outline-white text-white"><a href="login.php">Se connecter ?</a></p>
+        <p class=" btn mt-3 btn-outline-white text-white"><a href="login.php"> Se connecter ?</a></p>
     </form>
   </div>
 </body>

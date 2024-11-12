@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         <input type="submit" value="Se Connecter" class="m-4 subm">
         </div>
         
-        <p class=" btn mt-3 btn-outline-white text-white">Mot de passe oublier ?<a href="reg.php">Cree un compte ?</a></p>
+        <p class=" btn mt-3 btn-outline-white text-white">Mot de passe oublier ? <a href="reg.php"> Cree un compte ?</a></p>
     </form>
   </div>
 </body>

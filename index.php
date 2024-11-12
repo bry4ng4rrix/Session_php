@@ -1,5 +1,12 @@
 <?php 
 require_once('dbconf.php');
+session_start();
+$uname = $_SESSION['user_name'];
+$lastname = $_SESSION['user_lastn'];
+
+if(empty($uname)){
+    header('location:login.php');
+}
 ?>
 
 
@@ -11,5 +18,7 @@ require_once('dbconf.php');
     <title>Welcome</title>
 </head>
 <body>
+    <p>tongasoa ianao ry : <?php echo $uname; ?></p>
+    <a href="decon.php"><input type="button" value="Deconnexion"></a>
 </body>
 </html>
