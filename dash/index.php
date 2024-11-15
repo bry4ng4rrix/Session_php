@@ -42,7 +42,7 @@ if(empty($uname)){
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
         </nav>
-            <div class="container-fluid flex-column" id="content-wrapper">
+            <class="container-fluid flex-column" id="content-wrapper">
                 <div id="content">
                 <nav class="navbar bg navbar-expand topbap static-top justify-content-center">
                 <div class="container-fluid">
@@ -54,7 +54,32 @@ if(empty($uname)){
                 </div>
                 </nav>
                 </div>
-            </div>
+
+                <section>
+                    <div class="container-fluid">
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ajouter un élément</button>
+                                    <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Nom</th>
+                                                <th>Email</th>
+                                                <th>date</th>
+                                                <th>Actions</th>
+                                                <th>Note</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                        
+                                            </tbody>
+                                        </table>
+
+                    </div>
+                </section>
+
+         
     </div>
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
