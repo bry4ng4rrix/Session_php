@@ -31,25 +31,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Register</title>
 </head>
 <body>
-  <div class="container  form text-center text-white justify-content-center">
-        <p class="h1">Bienvenue  !</p>
-    <form action="" method="post" class="d-block containe m-3 justify-content-center">
-        <div class="container ">
-            <p class="h6 text-danger"><?php echo $log ; ?></p>
-        <input type="text" name="nom" id="" placeholder="Nom" class="m-2 border border-0 rounded-2" required autocomplete="off"><br>
-        <input type="text" name="prenom" id="" placeholder="Prenom" class="m-2 border border-0 rounded-2" required autocomplete="off"><br>
-        <input type="email" name="email" id="" placeholder="Email" class="m-2 border border-0 rounded-2" required autocomplete="off"><br>
-        <input type="password" name="mdp" id="" placeholder="Mot de pass"class="m-2 border border-0 rounded-2" required autocomplete="off"><br>
-        <input type="password" name="mdp1" id="" placeholder="Confirmer le Mot de pass"class="m-2 border border-0 rounded-2" required autocomplete="off"><br>
-        <input type="submit" value="Enregistrer" class="m-4 subm">
+<section class="mb-4">
+        <div class="container">
+            <div class="row mx-auto d-flex justify-content-center">
+                <div class="col-xl-4">
+                        <div class=" flex-column align-items-center">
+                        <div class="h1 text-light text-center mb-5"><span>BIENVENUE !</span></div>
+                        <p class="h6 text-center text-danger"><?php echo $log; ?></p>
+                        <form action="#" method="post" class="mt-3 text-center">
+                            <div class="mb-3"><input class="form-control inp" type="text" name="nom" placeholder="Nom" required></div>
+                            <div class="mb-3"><input class="form-control inp" type="text" name="prenom" placeholder="Prenom" required></div>
+                            <div class="mb-3"><input class="form-control inp" type="email" name="email" placeholder="Email" required></div>
+                            <div class="mb-3"><input class="form-control inp" type="password" name="mdp1" placeholder="Mot de pass" required></div>
+                            <div class="mb-5"><input class="form-control inp" type="password" name="mdp2" placeholder="Confirmer votre Mot de pass" required></div>
+                            <div class="mb-3"><button class="btn btn-outline-light form-control sbm" type="submit">Enregistre</button></div>
+                            <p class="text-muted">Deja un compte ? <a href="login.php">Se connecter ?</a></p>
+                            </form>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-        
-        <p class=" btn mt-3 btn-outline-white text-white"><a href="login.php"> Se connecter ?</a></p>
-    </form>
-  </div>
+</section>
 </body>
 </html>
