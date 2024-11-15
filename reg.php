@@ -40,11 +40,11 @@
     <form action="" method="post" class="d-block containe m-3 justify-content-center">
         <div class="container ">
             <p class="h6 text-danger"><?php echo $log ; ?></p>
-        <input type="text" name="nom" id="" placeholder="Nom" class="m-2 border border-0 rounded-2"><br>
-        <input type="text" name="prenom" id="" placeholder="Prenom" class="m-2 border border-0 rounded-2"><br>
-        <input type="email" name="email" id="" placeholder="Email" class="m-2 border border-0 rounded-2"><br>
-        <input type="password" name="mdp" id="" placeholder="Mot de pass"class="m-2 border border-0 rounded-2"><br>
-        <input type="password" name="mdp1" id="" placeholder="Confirmer le Mot de pass"class="m-2 border border-0 rounded-2"><br>
+        <input type="text" name="nom" id="" placeholder="Nom" class="m-2 border border-0 rounded-2" required autocomplete="off"><br>
+        <input type="text" name="prenom" id="" placeholder="Prenom" class="m-2 border border-0 rounded-2" required autocomplete="off"><br>
+        <input type="email" name="email" id="" placeholder="Email" class="m-2 border border-0 rounded-2" required autocomplete="off"><br>
+        <input type="password" name="mdp" id="" placeholder="Mot de pass"class="m-2 border border-0 rounded-2" required autocomplete="off"><br>
+        <input type="password" name="mdp1" id="" placeholder="Confirmer le Mot de pass"class="m-2 border border-0 rounded-2" required autocomplete="off"><br>
         <input type="submit" value="Enregistrer" class="m-4 subm">
         </div>
         

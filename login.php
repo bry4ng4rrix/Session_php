@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                 session_start();
                 $_SESSION['user_name']=$data['nom'];
                 $_SESSION['user_lastn']=$data['prenom'];
-                header('location:index.php');
+                header('location:/dash/index.php');
             }else $log = "Mot de pass incorect";
         }else $log  = "Email inconue";
 
@@ -40,8 +40,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     <form action="" method="post" class="d-block containe m-3 justify-content-center">
         <div class="container ">
             <p class="h6 text-danger"><?php echo $log ; ?></p>
-        <input type="email" name="email" id="" placeholder="Email" class="m-2 border border-0 rounded-2"><br>
-        <input type="password" name="mdp" id="" placeholder="Mot de pass"class="m-2 border border-0 rounded-2"><br>
+        <input type="email" name="email" id="" placeholder="Email" class="m-2 border border-0 rounded-2" required autocomplete="off"><br>
+        <input type="password" name="mdp" id="" placeholder="Mot de pass"class="m-2 border border-0 rounded-2" required autocomplete="off"><br>
         <input type="submit" value="Se Connecter" class="m-4 subm">
         </div>
         
