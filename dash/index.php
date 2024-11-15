@@ -24,11 +24,12 @@ if(empty($uname)){
     .nav_bg{
         background-color: rgb(22, 4, 34);
     }
+   
 </style>
 
 <body id="page-top">
     <div id="wrapper">
-        <nav class="navbar navbar-dark align-items-center sidebar sidebar-dark accordion nav_bg">
+        <nav class="navbar align-items-center sidebar sidebar-dark accordion nav_bg">
             <div class="container-fluid d-flex flex-column p-0">
                
                 <hr class="sidebar-divider my-0">
@@ -41,11 +42,27 @@ if(empty($uname)){
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
         </nav>
+            <div class="container-fluid flex-column" id="content-wrapper">
+                <div id="content">
+                <nav class="navbar bg navbar-expand topbap static-top justify-content-center">
+                <div class="container-fluid">
+                        <div class="container"><span class="nav-brand">E-corp</span></div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-user"></i></a></li>
+                            <li class="nav-item"><a href="" class="nav-link"><?php echo $uname; ?></a></li>
+                        </ul>
+                </div>
+                </nav>
+                </div>
+            </div>
     </div>
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/chart.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/theme.js"></script>
+
 </body>
+
 
 </html>
