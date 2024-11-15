@@ -31,22 +31,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Connexion</title>
 </head>
 <body>
-  <div class="container  form text-center text-white justify-content-center">
-        <p class="h1">Bienvenue  !</p>
-    <form action="" method="post" class="d-block containe m-3 justify-content-center">
-        <div class="container ">
-            <p class="h6 text-danger"><?php echo $log ; ?></p>
-        <input type="email" name="email" id="" placeholder="Email" class="m-2 border border-0 rounded-2" required autocomplete="off"><br>
-        <input type="password" name="mdp" id="" placeholder="Mot de pass"class="m-2 border border-0 rounded-2" required autocomplete="off"><br>
-        <input type="submit" value="Se Connecter" class="m-4 subm">
+<section class="mb-5">
+        <div class="container">
+            <div class="row mx-auto d-flex justify-content-center">
+                <div class="col-xl-4">
+                        <div class=" flex-column align-items-center">
+                        <div class="h1 text-light text-center mb-5"><span>BIENVENUE !</span></div>
+                        <p class="h6 text-center text-danger"><?php echo $log; ?></p>
+                        <form action="#" method="post" class="mt-3 text-center">
+                            <div class="mb-3"><input class="form-control inp" type="email" name="email" placeholder="Email" required></div>
+                            <div class="mb-5"><input class="form-control inp" type="password" name="mdp" placeholder="Mot de pass" required></div>
+                            <div class="mb-3"><button class="btn btn-outline-light form-control sbm" type="submit">Se connecter</button></div>
+                            <p class="text-muted">Mot de pass oubliée ? <a href="reg.php">Crée un compte ?</a></p>
+                            </form>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-        
-        <p class=" btn mt-3 btn-outline-white text-white">Mot de passe oublier ? <a href="reg.php"> Cree un compte ?</a></p>
-    </form>
-  </div>
+</section>
 </body>
 </html>
+
+

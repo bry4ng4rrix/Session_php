@@ -1,0 +1,35 @@
+body {
+   /* background-image: linear-gradient(to bottom right,blueviolet ,rgb(22, 4, 34)); */
+   background-color: rgb(22, 4, 34);
+
+   }
+a{
+    color: blueviolet;
+    text-decoration-line: none;
+    text-decoration: none;
+}
+section{
+    margin-top: 10%;
+}
+
+.inp ,.form-control{
+
+   height: 50px;
+   border-radius: 2px;
+}
+.inp{
+   background-color: rgb(212, 198, 221);
+   border: none;
+}
+.inp:focus{
+    background-color: rgb(238, 234, 241);
+    color: rgb(22, 4, 34);
+    border: none;
+    box-shadow: none;
+    
+}
+.inp::placeholder{
+    color: rgb(22, 4, 34);
+    font-size: 0.7rem;
+}
+
